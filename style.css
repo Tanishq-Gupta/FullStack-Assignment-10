@@ -46,7 +46,6 @@
   text-align: justify;
 }
 .slider {
-  width: 16%;
   background-color: rgb(25, 25, 49);
   height: calc(100vh - 90px);
   position: sticky;
