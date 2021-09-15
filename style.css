@@ -79,7 +79,7 @@
   height: 30px;
   width: 30px;
 }
-.close-bars{
+.close-bars {
   height: 30px;
   width: 30px;
   position: absolute;
@@ -95,7 +95,7 @@
   width: 10%;
   display: flex;
   align-items: center;
-  justify-content:start;
+  justify-content: start;
   position: relative;
 }
 input {
@@ -106,7 +106,7 @@ input {
   justify-content: center;
   width: 84%;
 }
-#open:checked + div{
+#open:checked + div {
   width: 16%;
 }
 label {
@@ -121,9 +121,12 @@ label {
   width: 30px;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   #open:checked + div {
-    width: 100vw;
-    background-color: red;
+    width: 100%;
+  }
+  #open:checked ~ .content {
+    height: 0;
+    width: 0;
   }
 }
