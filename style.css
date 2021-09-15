@@ -51,6 +51,7 @@
   position: sticky;
   top: 90px;
   transition: 1s;
+  width: 0;
 }
 .list div {
   display: flex;
@@ -106,7 +107,7 @@ input {
   width: 84%;
 }
 #open:checked + div{
-  width: 0;
+  width: 16%;
 }
 label {
   margin-left: 40px;
@@ -118,7 +119,4 @@ label {
 .social a img {
   height: 30px;
   width: 30px;
-}
-#open:checked + label{
-  display: none;
 }
