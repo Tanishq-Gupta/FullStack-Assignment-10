@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+.header {
+  height: 90px;
+  background-color: rgb(38, 38, 75);
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+.imgtext {
+  height: 90px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgtext h1 {
+  color: white;
+}
+.main {
+  display: flex;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.content .imagecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+.imagecontainer img {
+  height: 500px;
+  width: 700px;
+}
+.content .textcontainer p {
+  word-spacing: 10px;
+  margin: 0px 30px;
+  text-align: justify;
+}
+.slider {
+  width: 16%;
+  background-color: rgb(25, 25, 49);
+  height: calc(100vh - 90px);
+  position: sticky;
+  top: 90px;
+  transition: 1s;
+}
+.list div {
+  display: flex;
+}
+.list div a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border-bottom: 1px solid white;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whiteline {
+  transition: 700ms;
+}
+.list div:hover .whiteline {
+  width: 10px;
+  background-color: white;
+  height: 70px;
+}
+.bars {
+  height: 30px;
+  width: 30px;
+}
+.close-bars{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 28px;
+  right: 112px;
+  display: none;
+}
+.maintain {
+  display: flex;
+  width: 100%;
+}
+.navicons {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content:start;
+  position: relative;
+}
+input {
+  display: none;
+}
+.imgtext {
+  display: flex;
+  justify-content: center;
+  width: 84%;
+}
+#open:checked + div{
+  width: 0;
+}
+label {
+  margin-left: 40px;
+}
+.social {
+  margin-top: 430px;
+  width: 100%;
+}
+.social a img {
+  height: 30px;
+  width: 30px;
+}
+#open:checked + label{
+  display: none;
+}
